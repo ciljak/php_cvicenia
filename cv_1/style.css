@@ -1,0 +1,51 @@
+body {
+  /* background-color: lightblue; */
+  background-color: #8bcbff;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  background-image: url("images/php.png");
+
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: 3px ;
+
+  
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: rgb(124, 124, 124);
+  background-color: rgb(227, 248, 255);
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  
+}
+
+.container {
+  width:960px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.articles {
+  
+  
+  background-color: rgb(132, 181, 197);
+  padding: 10px 0px 10px 0px;
+}
+
+#Nadpis_headline {
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  border: 1px ;
+  border-style: dotted;
+  border-color: dimgrey;
+  margin-bottom: 50px;
+ 
+  
+}

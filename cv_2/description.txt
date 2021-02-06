@@ -1,0 +1,1 @@
+Training scenario 2 describe how to use expression and combine strings php scripting.
