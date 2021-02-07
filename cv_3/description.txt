@@ -1,0 +1,1 @@
+Training scenario 3 describe how to use if and switch in php scripting.

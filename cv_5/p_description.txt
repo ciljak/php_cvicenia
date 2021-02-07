@@ -1,0 +1,1 @@
+Training scenario 5 describe how to use functions in php scripting.

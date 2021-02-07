@@ -1,0 +1,1 @@
+Training scenario 4 describe how to use cycle - for, foreach, while a do while php scripting.
