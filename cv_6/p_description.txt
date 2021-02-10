@@ -1,0 +1,1 @@
+Training scenario 6 describe how to use forms and actions on calc applicaton.

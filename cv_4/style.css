@@ -40,15 +40,55 @@ p {
 
 .container {
   width:960px;
-margin-left:auto;
-margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .articles {
+  border-radius: 25px;
   
-  
-  background-color: rgb(132, 181, 197);
+  background-color: rgb(252, 255, 206);
   padding: 10px 0px 10px 0px;
+
+  border-top: 5px darkgray solid;
+
+  background-image: url(images/thermometer.png);
+  background-repeat: no-repeat;
+  background-size: 120px ;
+  background-position: 50px 160px ;
+}
+
+.form-group {
+  margin: 0 auto; 
+  padding: 10px;
+  width:400px;
+  border-radius: 25px;
+  background-color: rgb(255, 234, 208);
+  border: 2px doted gray;
+
+  border-top: 5px darkgray solid; 
+  
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 3px solid rgb(114, 114, 114); 
+}
+
+label {
+  font-weight: bold;
+  color: rgb(94, 94, 94);
+  
+}
+
+input, select {
+  margin-top: 10px;
+}
+button {
+  margin: 0 auto;
 }
 
 #Nadpis_headline {

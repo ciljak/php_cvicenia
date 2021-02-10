@@ -1,0 +1,3 @@
+Training scenario 8 describe how to design databse, and create separate functionality for simple mailer application.
+                  9 describe how to work with e-mail
+                  10 describe how to create sql commands and execution them

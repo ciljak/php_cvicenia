@@ -10,7 +10,7 @@
             $is_result = "false"; //before hitting submit button no result is available
             $result = 0; // result and boath number are by default at zero values initialized
 
-
+            // echo $_SERVER['SERVER_SOFTWARE']; superglobálne asociatívne pole server
 // Control if data was submitted
 if(filter_has_var(INPUT_GET, 'submit')){
       // Data obtained from $_POST are assigned to local variables
@@ -30,16 +30,25 @@ if(filter_has_var(INPUT_GET, 'submit')){
         case "summer": {          
                       $msg = "<p>Heating in summer - inner temperature is $room_temperature<span>&#8451;</span>.</p>"; 
                       $msgClass = 'alert-warning';    
-                         }; break;
+                        }; break;
+        default: { 
+                       echo "Warning only winter and summer can be accepted as input."; 
+                        }; break;                
  				 		 
       };
 
-      if ($room_temperature>=25) {
+     /* if ($room_temperature>=25) {
             $msg .= "<p> A bit internal overheating :-).</p>";
       };
 
       if ($room_temperature<18) {
             $msg .= "<p> Too cold for this time :-(.</p>";
+      }; */
+
+       if (($room_temperature>=18) && ($room_temperature<=25)) {
+            $msg .= "<p> Optimal temerature in your environment.</p>";
+      } else {
+            $msg .= "<p> Temperatures are not in optimal limits.</p>";
       };
       
 }
@@ -76,8 +85,10 @@ if(filter_has_var(INPUT_GET, 'submit')){
         
           <div class="form-group">
                   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
+
                         <label for="room_temperature">Plese provide your room temperature in form XX.X:</label>
                         <input type="text" name="room_temperature" value="<?php echo isset($_GET['room_temperature']) ? $room_temperature: '21.0'; ?>">
+
                         <span>&#8451;</span>
                         <br /><br />
                         <label for="season">Select current season: </label>

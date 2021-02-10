@@ -1,0 +1,1 @@
+Training scenario 7 describe how to create and connect to a database on guestbook applicaton.
